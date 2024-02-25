@@ -45,7 +45,7 @@ opción `-c` para contar el número de caracteres:
     wc -c bodyhtml.txt
     ```
 
-    ![WordCountTelnet](./imgs/telnetWC.png)\
+ 
     ¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen?
     - **GET** se utiliza para solicitar datos de un recurso específico a un servidor web.
     - **POST** se utiliza para enviar datos a un servidor web para procesarlos, se utiliza comúnmente para enviar información confidencial o datos que son demasiado largos para ser enviados a través del método GET.
