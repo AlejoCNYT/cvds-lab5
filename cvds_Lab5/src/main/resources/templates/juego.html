@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Juego de Adivinar el Número</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <div class="container">
+       
+        <h1 class="text-center mt-5">Juego de Adivinar el Número</h1>
+   
+        <p class="text-center">Tu premio actual es de $<span th:text="${prize}"></span></p> 
+        <form action="/juego" method="post" class="text-center">
+            <div class="form-group mx-auto">
+                <label for="numero">Ingresa un número del 1 al 10:</label>
+                <input type="number" class="form-control input-sm mx-auto d-block" id="numero" name="numero" min="1" max="10" required style="width: 100px;">
+            </div>
+            <button type="submit" class="btn btn-primary">Jugar</button>
+        </form>
+        <p class="text-center mt-3"><a href="/juego/reset">Reiniciar el juego</a></p>
+    </div>
+
+
+</body>
+</html>
