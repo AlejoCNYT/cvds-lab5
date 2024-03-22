@@ -73,12 +73,28 @@ Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de a
 
 Claro está, las peticiones GET son insuficientes en muchos casos. Investigue: ¿Cuál esla diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen? 7. En la practica no se utiliza telnet para hacer peticiones a sitios web sino el comando curl con ayuda de la linea de comandos:
 
+1) **GET** Solicita datos de un recurso específico del servidor.
+2) **POST** Crear o actualizar un recurso.
+
+Aparte, existen otros tipos de solicitud tales como:
+
+* **PUT** Crear o Actualizar datos hacia una ubicación específica.
+* **DELETE** Eliminar recurso en una ubicación específica.
+* **PATCH** Modificar temporalmente un recurso.
+* **HEAD** Solicitar encabezados de respuesta.
+* **OPTIONS** Solicitar opciones disponibles de comunicación de un recurso o servidor.
+
 $ curl "www.httpbin.org"
 
 Utilice ahora el parámetro -v y con el parámetro -i:
 
 $ curl -v www.httpbin.org
+
+*Detalla información sobre solicitud y repuesta.*
+
 $ curl -i www.httpbin.org
+
+*Muestra sólo encabezados de la respuesta.*
 
 ¿Cuáles son las diferencias con los diferentes parámetros?
 PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
