@@ -92,9 +92,13 @@ $ curl -v www.httpbin.org
 
 *Detalla información sobre solicitud y repuesta.*
 
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20182426.png)
+
 $ curl -i www.httpbin.org
 
 *Muestra sólo encabezados de la respuesta.*
+
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20182445.png)
 
 ¿Cuáles son las diferencias con los diferentes parámetros?
 PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
