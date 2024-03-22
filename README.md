@@ -20,6 +20,8 @@ PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
 $ telnet HOST PORT
 
+
+
     Antes de que el servidor cierre la conexión por falta de comunicación:
 
 Revise el RFC del protocolo HTTP, sobre cómo realizar una petición GET. Debe lucir más o menos de esta forma:
