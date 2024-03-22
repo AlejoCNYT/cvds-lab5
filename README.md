@@ -35,15 +35,15 @@ Revise el resultado obtenido.
 
     ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
 
-    El error obtenido es **301 Moved Permanently**, lo cual indica que el recurso ha sido movido permanentemente a otra ubicación proporcionada en el encaezado **location**.
+El error obtenido es **301 Moved Permanently**, lo cual indica que el recurso ha sido movido permanentemente a otra ubicación proporcionada en el encaezado **location**.
     
     ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
 
-    * **200 OK** Indica que la solicitud ha tenido éxito.
-    * **400 Bad Request** Síntaxis incorrecta.
-    * **403 Forbidden** Negación en cumplimiento de solicitud requerida.
-    * **404 Not Found** Recurso solicitado no está en servidor.
-    * **500 Internal Server Error** Error en el servidor, al procesar la solicitud.
+* **200 OK** Indica que la solicitud ha tenido éxito.
+* **400 Bad Request** Síntaxis incorrecta.
+* **403 Forbidden** Negación en cumplimiento de solicitud requerida.
+* **404 Not Found** Recurso solicitado no está en servidor.
+* **500 Internal Server Error** Error en el servidor, al procesar la solicitud.
 
     Responder en el README.md según lo indicado en la última sección de este laboratorio (ENTREGA).
 
