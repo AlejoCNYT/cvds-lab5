@@ -1,72 +1,79 @@
-# CVDS - LABORATORIO 5 - INTRODUCCIÓN A PROYECTOS WEB
+LABORATORIO 5 - SPRING MVC INTRODUCTION
+INTRODUCCIÓN A PROYECTOS WEB
+PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
-## INTEGRANTES
+    Abra una terminal Linux o consola de comandos Windows.
+    Realice una conexión síncrona TCP/IP a través de Telnet al siguiente servidor:
+    Host: www.escuelaing.edu.co
+    Puerto: 80 Teniendo en cuenta los parámetros del comando telnet:
 
-Daniel Alejandro Acero Varela - Julian David Triana Roa
+$ telnet HOST PORT
 
-## RESPUESTAS
+    Antes de que el servidor cierre la conexión por falta de comunicación:
 
-### Parte I - JUGANDO A SER UN CLIENTE HTTP
+Revise el RFC del protocolo HTTP, sobre cómo realizar una petición GET. Debe lucir más o menos de esta forma:
 
-1. Abra una terminal Linux o consola de comando Windows
-2. Realice una conexión síncronica TCP/IP a través de Telnet al siguiente servidor
-    - Host: www.escuelaing.edu.co
-    - Puerto: 80
+GET /with-a-resource.html HTTP/1.0
+Host: www.escuelaing.edu.co
 
-    ```bash
-    telnet www.escuelaing.edu.co 80
-    ```
+Con esto, solicite al servidor el recurso sssss/abc.html, usando la versión 1.0 de HTTP. Copie las dos lineas de codigo con el recurso agregado y peguelas en la consola del servidor ya abierta. Asegúrese de presionar ENTER dos veces después de ingresar el comando.
 
-3. Revisar el resultado obtenido solicitando el recurso `/sssss/abc.html` usando la version 1.0 de HTTP
-        !
-        - ¿Qué código de error sale?\
-        El código de error que sale es 301 Moved Permanetly
-        - ¿Qué otros códigos de error existen? ¿En qué casos se manejarán?
-        1. 1xx Informational response\
-            Indica que la solicitud fue recibida y atendida.
-        2. 2xx Success\
-            Indica que la solicitud fue recibida por el cliente fue recibida, entendida y aceptada.
-        3. 3xx Redirection\
-            Indica que el cliente debe realizar una acción adicional para completar la solicitud.
-        4. 4xx Client errors\
-            Indica las situaciones en las que el error parece haber sido causado por el cliente.
-        5. 5xx Server errors\
-            Indica que el servidor no pudo cumplir con una solicitud.
-        [Códigos de estado HTTP](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
-4. Realice una nueva conexión telnet y solicite el recurso  `/html`, esta vez a:
-    - Host: www.httpbin.org
-    - Puerto: 80
-    - Versión HTTP/1.1
-   
-5. Seleccione elcontenido HTML de la respuesta y copielo al portapapeles `CTRL-SHIFT-C`. Ejecute elcomando `wc` (word count) para contar palabras con la
-opción `-c` para contar el número de caracteres:
+Revise el resultado obtenido.
 
-    ```bash
-    wc -c bodyhtml.txt
-    ```
+    ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
+    ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
 
- 
-    ¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen?
-    - **GET** se utiliza para solicitar datos de un recurso específico a un servidor web.
-    - **POST** se utiliza para enviar datos a un servidor web para procesarlos, se utiliza comúnmente para enviar información confidencial o datos que son demasiado largos para ser enviados a través del método GET.
-    - **Otras peticiones**
-        - **PUT**
-            Se utiliza para actualizar un recurso existente en un servidor web con un nuevo conjunto de datos.
-        - **DELETE**
-            Se utiliza para eliminar un recurso existente en un servidor web.
-        - **HEAD**
-            Se utiliza para solicitar sólo la información de encabezado de una respuesta HTTP, sin incluir el cuerpo del mensaje.
-        - **OPTIONS**
-            Se utiliza para obtener información sobre los métodos HTTP que son compatibles con un recurso en particular en un servidor web.
-        - **PATCH**
-            Se utiliza para actualizar parcialmente un recurso en un servidor web con un conjunto específico de cambios.
-        - **TRACE**
-            Se utiliza para obtener una respuesta de retorno de un mensaje que incluye la secuencia de cambios realizados por cualquier servidor intermedio en el camino entre el cliente y el servidor final.
-6. En la practica no se utiliza  `telnet` para hacer peticiones a sitios web sino el comando `curl` con ayuda de la linea de comandos: `curl www.httpbin.org`, utilice el parámetro `-v`y el parámetro `-i`\
-    
-    ¿Cuáles son las difernecias con los diferentes parámetros?
-    - **VERBOSE (-v):**
-    Indica la información detallada sobre la comunicación que se está llevando a cabo entre el cliente y el servidor.
-    - **INCLUDE (-i):**
-    Incluye los encabezados de respuesta en la salida, además del cuerpo de la respuesta, es útil para asegurar que todo este funcionando correctamente.
+    Responder en el README.md según lo indicado en la última sección de este laboratorio (ENTREGA).
 
+    Realice una nueva conexión con telnet, esta vez a:
+
+Host: www.httpbin.org
+Puerto: 80
+Versión HTTP: 1.1
+
+Ahora, solicite (GET) el recurso /html. ¿Qué se obtiene como resultado?
+
+¡Muy bien!, ¡Acaba de usar del protocolo HTTP sin un navegador Web!. Cada vez que se usa un navegador, éste se conecta a un servidor HTTP, envía peticiones del protocolo HTTP, espera el resultado de las mismas, y si se trata de contenido HTML lo interpreta y dibuja.
+
+    Seleccione el contenido HTML de la respuesta y copielo al cortapapeles CTRL-SHIFT-C. Ejecute el comando wc (word count) para contar palabras con la opción -c para contar el número de caracteres:
+
+$ wc -c
+
+Pegue el contenido del portapapeles con CTRL-SHIFT-V y presione CTRL-D (fin de archivo de Linux). Si no termina el comando wc presione CTRL-D de nuevo. No presione mas de dos veces CTRL-D indica que se termino la entrada y puede cerrarle la terminal. Debe salir el resultado de la cantidad de caracteres que tiene el contenido HTML que respondió el servidor.
+
+Claro está, las peticiones GET son insuficientes en muchos casos. Investigue: ¿Cuál esla diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen? 7. En la practica no se utiliza telnet para hacer peticiones a sitios web sino el comando curl con ayuda de la linea de comandos:
+
+$ curl "www.httpbin.org"
+
+Utilice ahora el parámetro -v y con el parámetro -i:
+
+$ curl -v www.httpbin.org
+$ curl -i www.httpbin.org
+
+¿Cuáles son las diferencias con los diferentes parámetros?
+PARTE II. - HACIENDO UNA APLICACIÓN WEB DINÁMICA USANDO EL PATRÓN MVC
+
+En este ejercicio, va a implementar una aplicación Web muy básica, haciendo uso de spring MVC.
+
+Para esto usaremos la documentación oficial de Spring con que que aprenderemos las funciones básicas de este framework https://spring.io/guides/gs/serving-web-content/
+
+Después de terminar el aprendizaje analice: - ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial) - ¿Cuáles son las ventajas de usar MVC? - ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)? - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+PARTE III. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
+
+Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
+
+Luego de terminada esta parte responda: - ¿Qué es RESTful? - Si utilizo un framework como Boostrap CSS para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
+PARTE IV. - APLICACIÓN MVC JUEGO
+
+¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo /guess, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
+
+Y vamos a implementar la lógica de nuestro juego: 1. Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos. 2. El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10. 3. Debe existir un botón de reset, qué permita al jugador iniciar de nuevo. 4. La capa de controlador debe procer el número del usuario mediante método POST.
+
+Analice las siguientes situaciones: - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes? - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+ENTREGA
+
+    En un README.md colocar lo siguiente:
+    Una sección llamada “INTEGRANTES” y allícolocar el listado de los integrantes del taller (máximo 2).
+    Una sección llamada “RESPUESTAS” colocar lasrespuestas a las preguntas:
+    Configurar el archivo .gitignore para excluir del repositorio los archivos no relevantes.
+    En una carpeta en la raiz del repositorio llamada diagrams y allí realizar un diagrama de clases del proyecto.
