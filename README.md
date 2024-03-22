@@ -8,8 +8,6 @@ Previamente, se dispone la configuración de Windows para ello.
 ![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171531.png)
 ![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171545.png)
 ![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171612.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171704.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20172301.png)
 
 PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
@@ -20,7 +18,7 @@ PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
 $ telnet HOST PORT
 
-
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171704.png)
 
     Antes de que el servidor cierre la conexión por falta de comunicación:
 
@@ -29,12 +27,23 @@ Revise el RFC del protocolo HTTP, sobre cómo realizar una petición GET. Debe l
 GET /with-a-resource.html HTTP/1.0
 Host: www.escuelaing.edu.co
 
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20172301.png)
+
 Con esto, solicite al servidor el recurso sssss/abc.html, usando la versión 1.0 de HTTP. Copie las dos lineas de codigo con el recurso agregado y peguelas en la consola del servidor ya abierta. Asegúrese de presionar ENTER dos veces después de ingresar el comando.
 
 Revise el resultado obtenido.
 
     ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
+
+    El error obtenido es **301 Moved Permanently**, lo cual indica que el recurso ha sido movido permanentemente a otra ubicación proporcionada en el encaezado **location**.
+    
     ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
+
+    * **200 OK** Indica que la solicitud ha tenido éxito.
+    * **400 Bad Request** Síntaxis incorrecta.
+    * **403 Forbidden** Negación en cumplimiento de solicitud requerida.
+    * **404 Not Found** Recurso solicitado no está en servidor.
+    * **500 Internal Server Error** Error en el servidor, al procesar la solicitud.
 
     Responder en el README.md según lo indicado en la última sección de este laboratorio (ENTREGA).
 
