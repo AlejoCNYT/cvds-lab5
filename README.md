@@ -1,5 +1,16 @@
 LABORATORIO 5 - SPRING MVC INTRODUCTION
 INTRODUCCIÓN A PROYECTOS WEB
+
+Previamente, se dispone la configuración de Windows para ello.
+
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171321.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171334.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171531.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171545.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171612.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20171704.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20172301.png)
+
 PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
     Abra una terminal Linux o consola de comandos Windows.
