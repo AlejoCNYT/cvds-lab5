@@ -53,7 +53,11 @@ Host: www.httpbin.org
 Puerto: 80
 Versión HTTP: 1.1
 
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20174431.png)
+
 Ahora, solicite (GET) el recurso /html. ¿Qué se obtiene como resultado?
+
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-22%20174416.png)
 
 ¡Muy bien!, ¡Acaba de usar del protocolo HTTP sin un navegador Web!. Cada vez que se usa un navegador, éste se conecta a un servidor HTTP, envía peticiones del protocolo HTTP, espera el resultado de las mismas, y si se trata de contenido HTML lo interpreta y dibuja.
 
