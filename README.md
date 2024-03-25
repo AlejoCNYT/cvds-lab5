@@ -115,7 +115,44 @@ Para esto usaremos la documentación oficial de Spring con que que aprenderemos 
 ![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-25%20163846.png)
 ![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-25%20164155.png)
 
-Después de terminar el aprendizaje analice: - ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial) - ¿Cuáles son las ventajas de usar MVC? - ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)? - ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+Después de terminar el aprendizaje analice: 
+
+- ¿Por qué MVC obtiene ese nombre? (puede apoyarse de https://www.javatpoint.com/spring-mvc-tutorial)
+
+El nombre se debe al modelo de capas en que se organiza, según este modelo:
+
+* **Model** Es la lógica implicada.
+* **Vista** Presenta la interfaz al usuario y le permite interactuar con el programa.
+* **Controlador** Actúa como intermediario entre usuario y modelo, regresando los resultados adecuados dependiendo de la solicitud.
+
+- ¿Cuáles son las ventajas de usar MVC?
+
+Facilita la concepción de código al separar roles MVC, utiliza servlets ligeros para contener y desarrollar la aplicación, facilita desarrollo veloz y paralelo, facilidad para reutilizar objetos existentes, mayor facilidad para uso de setters, mapeo flexible y, uso de validadores y objetos de negocio.
+
+- ¿Qué diferencia tiene la estructura de directorios de este proyecto comparado con las de proyectos pasados (con solo maven y java EE)?
+
+**src/main/java**: aquí se ubican los componentes MVC del programa, en código fuente.
+
+**src/main/resources**: Se encuentran archivos estáticos y de parametrización de la aplicación tales como propiedades, XML y web.
+
+**src/test**: Contiene test unitarios e integración.
+
+**src/main/webapp**: Contiene recursos web de JSP, CSS, JS, etc.
+
+- ¿Qué anotaciones usaste y cuál es la diferencia entre ellas?
+
+**@Controller**: Define las peticiones que manejan HTTP. Marca controladores de Spring MVC.
+
+**@RequestMapping**: Asigna una URL o patrón URL al método controlador que lo requiere.
+
+**@GetMapping, @PostMapping, @PutMapping, @DeleteMapping**: Especifican el método HTTP como versión simplificada GET, POST, PUT y DELETE.
+
+**@RequestParam**: Vincula parámetros HTTP a los de un método _Controler_.
+
+**@ModelAttribute**: Enlaza parámetros de una solicitud HTTP o valores determinados con un objeto _Model_. Facilita agregación de atributos para su renderización.
+
+**@ResponseBody**: Indica serialización del valor devuelto por un método y no, ser interpretado con el nombre de una vista.
+  
 ## PARTE III. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
 
 Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
