@@ -1,4 +1,4 @@
-# LABORATORIO 5 - SPRING MVC INTRODUCTION
+x# LABORATORIO 5 - SPRING MVC INTRODUCTION
 ## INTRODUCCIÓN A PROYECTOS WEB
 
 Previamente, se dispone la configuración de Windows para ello.
@@ -213,6 +213,19 @@ En resumen, Bootstrap se utiliza principalmente en la capa de presentación (fro
 
 ¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo /guess, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
 
-Y vamos a implementar la lógica de nuestro juego: 1. Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos. 2. El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10. 3. Debe existir un botón de reset, qué permita al jugador iniciar de nuevo. 4. La capa de controlador debe procer el número del usuario mediante método POST.
+Y vamos a implementar la lógica de nuestro juego: 
 
-Analice las siguientes situaciones: - ¿Qué pasa si abro el sitio de juegos en dos navegadores difententes? - Si quisiera qué a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+1) Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos.
+2) El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10.
+3) Debe existir un botón de reset, qué permita al jugador iniciar de nuevo.
+4) La capa de controlador debe procer el número del usuario mediante método POST.
+
+Analice las siguientes situaciones:
+
+    ¿Qué pasa si abro el sitio de juegos en dos navegadores diferentes?
+
+    - Cada navegador tendrá su propia sesión independiente con el servidor, por lo que los jugadores podrán jugar de forma independiente sin interferir entre sí. Cada sesión tendrá su propio estado de juego y saldo.
+
+    Si quisiera que a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+
+    - Para lograr esto, necesitarías implementar una gestión de sesiones en tu aplicación. Puedes hacerlo usando Spring Session, que te permite mantener información de sesión independiente para cada usuario. Con Spring Session, cada jugador tendría su propio saldo asociado a su sesión, lo que garantizaría que los saldos sean independientes entre sí. Además, puedes utilizar una base de datos para almacenar los saldos de los jugadores de manera persistente, lo que permitiría mantener los saldos incluso si el servidor se reinicia.
