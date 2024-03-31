@@ -155,21 +155,21 @@ Facilita la concepción de código al separar roles MVC, utiliza servlets ligero
   
 ## PARTE III. - APLICACIÓN MVC PARA CONSUMO DE SERVICIO RESTful
 
-Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
+Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API [https://jsonplaceholder.typicode.com/todos/1](https://jsonplaceholder.typicode.com/todos/1), puede guiarse de tutoriales como [https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0](https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0).
 
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071214.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071329.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071340.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071621.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071647.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071958.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072211.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072219.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072242.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072336.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20073846.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074414.png)
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074430.png)
+![Captura de pantalla 1](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071214.png)
+![Captura de pantalla 2](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071329.png)
+![Captura de pantalla 3](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071340.png)
+![Captura de pantalla 4](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071621.png)
+![Captura de pantalla 5](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071647.png)
+![Captura de pantalla 6](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071958.png)
+![Captura de pantalla 7](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072211.png)
+![Captura de pantalla 8](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072219.png)
+![Captura de pantalla 9](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072242.png)
+![Captura de pantalla 10](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072336.png)
+![Captura de pantalla 11](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20073846.png)
+![Captura de pantalla 12](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074414.png)
+![Captura de pantalla 13](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074430.png)
 
 Luego de terminada esta parte responda: 
 
@@ -197,16 +197,16 @@ Algunas características de una API RESTful incluyen:
   
 ## PARTE IV. - APLICACIÓN MVC JUEGO
 
-¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo /guess, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
+¡Llegó la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo /guess, y agregue un formulario básico con un campo llamado "número" (guía de cómo crear formularios HTML [aquí](https://www.w3schools.com/html/)).
 
 Y vamos a implementar la lógica de nuestro juego: 
 
-1) Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio se reduce en $10.000, como en los juegos de apuesta, es natural qué quede en saldos negativos.
-2) El número a adivinar debe ser generado en cada intento y comparado con el número qué el usuario está insertando, es un número de 1 a 10.
-3) Debe existir un botón de reset, qué permita al jugador iniciar de nuevo.
-4) La capa de controlador debe procer el número del usuario mediante método POST.
+1) Se trata de un juego en línea para adivinar un número, en el que el ganador, si acierta en la primera oportunidad, recibe $100.000. Luego, por cada intento fallido, el premio se reduce en $10.000, como en los juegos de apuesta, es natural que quede en saldos negativos.
+2) El número a adivinar debe ser generado en cada intento y comparado con el número que el usuario está insertando, es un número de 1 a 10.
+3) Debe existir un botón de reset, que permita al jugador iniciar de nuevo.
+4) La capa de controlador debe procesar el número del usuario mediante método POST.
 
-![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20080936.png)
+![Captura de pantalla del juego](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20080936.png)
 
 Analice las siguientes situaciones:
 
@@ -216,4 +216,4 @@ Analice las siguientes situaciones:
 
     Si quisiera que a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
 
-    - Se puede implementar usando Spring Session, el cual facilita que cada usuario tenga su propia sesión. Con Spring Session, cada jugador puede terner su propia sesión y saldo asociado. Al igual, con una base de datos se puede mantener persistentemente por lo cual los saldos estarían independientes si el servidor se reinicia.
+    - Se puede implementar usando Spring Session, el cual facilita que cada usuario tenga su propia sesión. Con Spring Session, cada jugador puede tener su propia sesión y saldo asociado. Igualmente, con una base de datos se puede mantener persistentemente, por lo cual los saldos estarían independientes si el servidor se reinicia.
