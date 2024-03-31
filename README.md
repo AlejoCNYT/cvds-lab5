@@ -179,17 +179,17 @@ Luego de terminada esta parte responda:
 
 Algunas características de una API RESTful incluyen:
 
-    Protocolo HTTP: Utiliza HTTP como el protocolo de comunicación estándar, aprovechando sus operaciones (GET, POST, PUT, DELETE, etc.) para realizar acciones sobre los recursos.
+*Protocolo HTTP*: Utiliza HTTP como el protocolo de comunicación estándar, aprovechando sus operaciones (GET, POST, PUT, DELETE, etc.) para realizar acciones sobre los recursos.
 
-    Recursos: Los recursos son las entidades que se manipulan a través de la API. Cada recurso tiene un identificador único (URI) y puede ser representado en diferentes formatos (JSON, XML, etc.).
+*Recursos*: Los recursos son las entidades que se manipulan a través de la API. Cada recurso tiene un identificador único (URI) y puede ser representado en diferentes formatos (JSON, XML, etc.).
 
-    Operaciones CRUD: Las operaciones CRUD (Create, Read, Update, Delete) se mapean a las operaciones HTTP (POST, GET, PUT, DELETE) para crear, leer, actualizar y eliminar recursos.
+*Operaciones CRUD*: Las operaciones CRUD (Create, Read, Update, Delete) se mapean a las operaciones HTTP (POST, GET, PUT, DELETE) para crear, leer, actualizar y eliminar recursos.
 
-    Sin estado (Stateless): Las solicitudes de cliente contienen toda la información necesaria para ser comprendidas por el servidor. El servidor no mantiene ningún estado de sesión entre solicitudes.
+*Sin estado (Stateless)*: Las solicitudes de cliente contienen toda la información necesaria para ser comprendidas por el servidor. El servidor no mantiene ningún estado de sesión entre solicitudes.
 
-    Interfaz uniforme: Utiliza un conjunto común de operaciones (GET, POST, PUT, DELETE) para interactuar con los recursos, lo que simplifica el desarrollo y la comprensión de la API.
+*Interfaz uniforme*: Utiliza un conjunto común de operaciones (GET, POST, PUT, DELETE) para interactuar con los recursos, lo que simplifica el desarrollo y la comprensión de la API.
 
-    HATEOAS (Hypermedia as the Engine of Application State): Los clientes interactúan con la API a través de hipervínculos proporcionados en las respuestas, lo que les permite descubrir y navegar por los recursos de forma dinámica.
+*HATEOAS (Hypermedia as the Engine of Application State)*: Los clientes interactúan con la API a través de hipervínculos proporcionados en las respuestas, lo que les permite descubrir y navegar por los recursos de forma dinámica.
 
 - Si utilizo un framework como Boostrap CSS para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
 
@@ -210,10 +210,10 @@ Y vamos a implementar la lógica de nuestro juego:
 
 Analice las siguientes situaciones:
 
-    ¿Qué pasa si abro el sitio de juegos en dos navegadores diferentes?
+¿Qué pasa si abro el sitio de juegos en dos navegadores diferentes?
 
-    - Los jugadores pueden jugar independientemente entre sí. Cada jugador tiene su propio servidor.
+- Los jugadores pueden jugar independientemente entre sí. Cada jugador tiene su propio servidor.
 
-    Si quisiera que a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
+Si quisiera que a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
 
-    - Se puede implementar usando Spring Session, el cual facilita que cada usuario tenga su propia sesión. Con Spring Session, cada jugador puede tener su propia sesión y saldo asociado. Igualmente, con una base de datos se puede mantener persistentemente, por lo cual los saldos estarían independientes si el servidor se reinicia.
+- Se puede implementar usando Spring Session, el cual facilita que cada usuario tenga su propia sesión. Con Spring Session, cada jugador puede tener su propia sesión y saldo asociado. Igualmente, con una base de datos se puede mantener persistentemente, por lo cual los saldos estarían independientes si el servidor se reinicia.
