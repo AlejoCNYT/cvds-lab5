@@ -175,7 +175,7 @@ Luego de terminada esta parte responda:
 
 - ¿Qué es RESTful?
 
-* **RESTful (Representational State Transfer)**: Es un estilo de arquitectura de software que define un conjunto de restricciones y principios para el diseño de servicios web. Estos servicios web son llamados RESTful APIs o servicios web RESTful.
+* **RESTful (Representational State Transfer)**: Es un determinado estilo eficiente para DevOps. Dichos servicios son denominados RESTful APIs o servicios web RESTful.
 
 Algunas características de una API RESTful incluyen:
 
@@ -193,21 +193,7 @@ Algunas características de una API RESTful incluyen:
 
 - Si utilizo un framework como Boostrap CSS para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
 
-* El uso de un framework de CSS como Bootstrap para mejorar el aspecto visual de tu aplicación generalmente se realiza en la capa de presentación o capa de vista. En el contexto de una aplicación web, esta capa corresponde a la parte del código que se encarga de la interfaz de usuario y la presentación de la información.
-
-Aquí hay una descripción de cómo se puede integrar Bootstrap en diferentes capas de una aplicación web típica:
-
-    Capa de Presentación (Frontend):
-        En una aplicación web tradicional, Bootstrap se utiliza principalmente en la capa de presentación, que consiste en el código HTML, CSS y JavaScript que define la interfaz de usuario.
-        En esta capa, puedes utilizar las clases y componentes proporcionados por Bootstrap para diseñar y maquetar tus páginas web de una manera más profesional y consistente.
-        Esto implica agregar las referencias necesarias a los archivos de Bootstrap (como los archivos CSS y JS) en tus archivos HTML, y luego utilizar las clases de Bootstrap para aplicar estilos y diseños predefinidos a tus elementos HTML.
-
-    Capa de Controlador (Backend):
-        Aunque Bootstrap es principalmente un framework de frontend, también puede haber algunos casos en los que se utilice en la capa de controlador del backend.
-        Por ejemplo, en una aplicación web que genera HTML dinámicamente desde el backend (usando un framework como Spring MVC en Java), el controlador puede incluir lógica para agregar clases de Bootstrap a los modelos de datos antes de pasarlos a las vistas.
-        Sin embargo, esto no es tan común como su uso en la capa de presentación, ya que Bootstrap está diseñado principalmente para trabajar con HTML estático o dinámico en el navegador.
-
-En resumen, Bootstrap se utiliza principalmente en la capa de presentación (frontend) de una aplicación web para mejorar la apariencia y la experiencia del usuario. Integrarlo en esta capa te permite aprovechar al máximo sus características y componentes para diseñar interfaces de usuario atractivas y receptivas.
+* El uso de un framework de CSS como Bootstrap es para mejorar la visualización o presentación. Dicha capa corresponde a la parte del código que se encarga de la interfaz de usuario y la presentación de la información.
   
 ## PARTE IV. - APLICACIÓN MVC JUEGO
 
@@ -226,8 +212,8 @@ Analice las siguientes situaciones:
 
     ¿Qué pasa si abro el sitio de juegos en dos navegadores diferentes?
 
-    - Cada navegador tendrá su propia sesión independiente con el servidor, por lo que los jugadores podrán jugar de forma independiente sin interferir entre sí. Cada sesión tendrá su propio estado de juego y saldo.
+    - Los jugadores pueden jugar independientemente entre sí. Cada jugador tiene su propio servidor.
 
     Si quisiera que a cada jugador le aparecieran independientemente sus respectivos saldos. ¿Qué habría que hacer?
 
-    - Para lograr esto, necesitarías implementar una gestión de sesiones en tu aplicación. Puedes hacerlo usando Spring Session, que te permite mantener información de sesión independiente para cada usuario. Con Spring Session, cada jugador tendría su propio saldo asociado a su sesión, lo que garantizaría que los saldos sean independientes entre sí. Además, puedes utilizar una base de datos para almacenar los saldos de los jugadores de manera persistente, lo que permitiría mantener los saldos incluso si el servidor se reinicia.
+    - Se puede implementar usando Spring Session, el cual facilita que cada usuario tenga su propia sesión. Con Spring Session, cada jugador puede terner su propia sesión y saldo asociado. Al igual, con una base de datos se puede mantener persistentemente por lo cual los saldos estarían independientes si el servidor se reinicia.
