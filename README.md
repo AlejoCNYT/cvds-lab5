@@ -1,4 +1,8 @@
-x# LABORATORIO 5 - SPRING MVC INTRODUCTION
+# LABORATORIO 5 - SPRING MVC INTRODUCTION
+
+Daniel Alejandro AV
+Julian Triana
+
 ## INTRODUCCIÓN A PROYECTOS WEB
 
 Previamente, se dispone la configuración de Windows para ello.
