@@ -220,6 +220,8 @@ Y vamos a implementar la lógica de nuestro juego:
 3) Debe existir un botón de reset, qué permita al jugador iniciar de nuevo.
 4) La capa de controlador debe procer el número del usuario mediante método POST.
 
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20080936.png)
+
 Analice las siguientes situaciones:
 
     ¿Qué pasa si abro el sitio de juegos en dos navegadores diferentes?
