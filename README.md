@@ -157,7 +157,58 @@ Facilita la concepción de código al separar roles MVC, utiliza servlets ligero
 
 Usando la arquitectura MVC del punto anterior (el proyecto anterior), realice una aplicación simple qué permita navegar gráficamente sobre esta API https://jsonplaceholder.typicode.com/todos/1, puede guiarse de tutoriales como https://medium.com/@nutanbhogendrasharma/consume-rest-api-in-spring-boot-web-application-354c404850f0
 
-Luego de terminada esta parte responda: - ¿Qué es RESTful? - Si utilizo un framework como Boostrap CSS para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071214.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071329.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071340.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071621.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071647.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20071958.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072211.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072219.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072242.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20072336.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20073846.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074414.png)
+![](https://github.com/AlejoCNYT/cvds-lab5/blob/main/img/Captura%20de%20pantalla%202024-03-31%20074430.png)
+
+Luego de terminada esta parte responda: 
+
+- ¿Qué es RESTful?
+
+* **RESTful (Representational State Transfer)**: Es un estilo de arquitectura de software que define un conjunto de restricciones y principios para el diseño de servicios web. Estos servicios web son llamados RESTful APIs o servicios web RESTful.
+
+Algunas características de una API RESTful incluyen:
+
+    Protocolo HTTP: Utiliza HTTP como el protocolo de comunicación estándar, aprovechando sus operaciones (GET, POST, PUT, DELETE, etc.) para realizar acciones sobre los recursos.
+
+    Recursos: Los recursos son las entidades que se manipulan a través de la API. Cada recurso tiene un identificador único (URI) y puede ser representado en diferentes formatos (JSON, XML, etc.).
+
+    Operaciones CRUD: Las operaciones CRUD (Create, Read, Update, Delete) se mapean a las operaciones HTTP (POST, GET, PUT, DELETE) para crear, leer, actualizar y eliminar recursos.
+
+    Sin estado (Stateless): Las solicitudes de cliente contienen toda la información necesaria para ser comprendidas por el servidor. El servidor no mantiene ningún estado de sesión entre solicitudes.
+
+    Interfaz uniforme: Utiliza un conjunto común de operaciones (GET, POST, PUT, DELETE) para interactuar con los recursos, lo que simplifica el desarrollo y la comprensión de la API.
+
+    HATEOAS (Hypermedia as the Engine of Application State): Los clientes interactúan con la API a través de hipervínculos proporcionados en las respuestas, lo que les permite descubrir y navegar por los recursos de forma dinámica.
+
+- Si utilizo un framework como Boostrap CSS para qué el apartado gráfico se vea más profesional, ¿en qué capa se haría su uso?
+
+* El uso de un framework de CSS como Bootstrap para mejorar el aspecto visual de tu aplicación generalmente se realiza en la capa de presentación o capa de vista. En el contexto de una aplicación web, esta capa corresponde a la parte del código que se encarga de la interfaz de usuario y la presentación de la información.
+
+Aquí hay una descripción de cómo se puede integrar Bootstrap en diferentes capas de una aplicación web típica:
+
+    Capa de Presentación (Frontend):
+        En una aplicación web tradicional, Bootstrap se utiliza principalmente en la capa de presentación, que consiste en el código HTML, CSS y JavaScript que define la interfaz de usuario.
+        En esta capa, puedes utilizar las clases y componentes proporcionados por Bootstrap para diseñar y maquetar tus páginas web de una manera más profesional y consistente.
+        Esto implica agregar las referencias necesarias a los archivos de Bootstrap (como los archivos CSS y JS) en tus archivos HTML, y luego utilizar las clases de Bootstrap para aplicar estilos y diseños predefinidos a tus elementos HTML.
+
+    Capa de Controlador (Backend):
+        Aunque Bootstrap es principalmente un framework de frontend, también puede haber algunos casos en los que se utilice en la capa de controlador del backend.
+        Por ejemplo, en una aplicación web que genera HTML dinámicamente desde el backend (usando un framework como Spring MVC en Java), el controlador puede incluir lógica para agregar clases de Bootstrap a los modelos de datos antes de pasarlos a las vistas.
+        Sin embargo, esto no es tan común como su uso en la capa de presentación, ya que Bootstrap está diseñado principalmente para trabajar con HTML estático o dinámico en el navegador.
+
+En resumen, Bootstrap se utiliza principalmente en la capa de presentación (frontend) de una aplicación web para mejorar la apariencia y la experiencia del usuario. Integrarlo en esta capa te permite aprovechar al máximo sus características y componentes para diseñar interfaces de usuario atractivas y receptivas.
+  
 ## PARTE IV. - APLICACIÓN MVC JUEGO
 
 ¡Llego la hora del reto! Teniendo las bases del uso del framework, cree una nueva ruta, por ejemplo /guess, y agrege formulario básico con un campo llamado "número" (guía de como crear formularios HTML https://www.w3schools.com/html/)
