@@ -1,7 +1,7 @@
 # LABORATORIO 5 - SPRING MVC INTRODUCTION
 
-Daniel Alejandro AV
-Julian Triana
+* Daniel Alejandro AV
+* Julian Triana
 
 ## INTRODUCCIÓN A PROYECTOS WEB
 
